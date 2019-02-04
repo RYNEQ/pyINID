@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='pyinid',
-      version='0.1',
+      version='0.2',
       description='Validate And Generate Iran National ID',
       url='https://github.com/RYNEQ/pyINID',
       author='Ariyan Eghbal (RYN)',

@@ -1,0 +1,16 @@
+\documentclass[10pt]{article} % required
+\pagestyle{empty} % required
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{color}
+\usepackage[T1]{fontenc}
+
+\begin{document}\definecolor{fgC}{rgb}{0,0,0}\color{fgC}\begin{align*}&f(x) = \sum_{n=1}^{10} \frac{1}{10^n}(x \bmod 10^{n + 1} - x \bmod 10^n) \times (n+1)  \\
+\\ 
+& checksum(x) = \left\{
+        \begin{array}{ll}
+            f(x) & \quad f(x) < 2 \\
+            11 - f(x) & \quad f(x) \geq 2
+        \end{array}
+    \right.
+\end{align*}\end{document}

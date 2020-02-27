@@ -46,7 +46,7 @@ with open(code_file, 'r') as f:
     
 
 class INID:
-    def __ini__(self, inid):
+    def __init__(self, inid):
         if not isinstance(inid, str) or len(inid) not in (9,10):
             raise ValueError("Bad INID ({inid})")
         self._value = inid
@@ -64,7 +64,7 @@ class INID:
         return self.__str__()
     
     def is_valid(self):
-        return check_id(self.vlue)
+        return check_id(self.value)
 
 
 class INID_RANGE:
